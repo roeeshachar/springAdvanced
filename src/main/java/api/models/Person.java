@@ -2,10 +2,9 @@ package api.models;
 
 import javax.validation.constraints.NotNull;
 
-/**
- * Created by roee on 11/03/18.
+/***
+ * Represents a person
  */
-
 public class Person {
 
     @NotNull
@@ -13,6 +12,11 @@ public class Person {
     @NotNull
     public String name;
 
+    /**
+     * A constructor for the Person class
+     * @param id - the person's id
+     * @param name - the person's name
+     */
     public Person(int id, String name) {
         this.id = id;
         this.name = name;
@@ -20,17 +24,5 @@ public class Person {
 
     public int getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 }
